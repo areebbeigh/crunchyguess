@@ -1,28 +1,37 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app dark>
+    <v-container>
+      <v-layout>
+        <v-flex xs12 md7 class="pa-3">
+          <guess-list></guess-list>
+        </v-flex>
+        <v-flex xs12 md5>
+          <app-canvas></app-canvas>
+        </v-flex>
+      </v-layout>
+    </v-container>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppCanvas from '@/components/AppCanvas'
+import GuessList from '@/components/GuessList'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
-    HelloWorld
+    AppCanvas,
+    GuessList
+  },
+  data () {
+    return {
+      //
+    }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
+
