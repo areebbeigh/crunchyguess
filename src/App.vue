@@ -2,7 +2,7 @@
   <v-app dark>
     <v-container>
       <h2 class="display-1 px-4 pb-4">CrunchyGuess</h2>
-      <v-layout>
+      <v-layout wrap>
         <v-flex xs12 md7 class="pa-3">
           <guess-list></guess-list>
         </v-flex>

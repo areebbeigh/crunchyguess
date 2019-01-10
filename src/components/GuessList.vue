@@ -2,12 +2,12 @@
   <div>
     <div class="search-area">
       <v-text-field
-        class="search-input mx-2"
+        class="search-input"
         v-model="query"
         label="Search (Kitsu)"
         outline
       ></v-text-field>
-      <v-list v-if="fetchedAnimu.length" class="search-results pa-2 ma-2 mb-4">
+      <v-list v-if="fetchedAnimu.length" class="search-results pa-2 mb-4">
         <v-subheader class="grey--text">
           Search results - 2018
         </v-subheader>
@@ -34,7 +34,7 @@
       </v-list>
     </div>
 
-    <v-list v-if="this.selectedAnimu.length" class="pa-2 ma-2">
+    <v-list v-if="this.selectedAnimu.length" class="pa-2">
       <v-subheader class="grey--text">
         Your predictions
       </v-subheader>
@@ -65,7 +65,7 @@
           </v-flex>
       </v-layout>
     </v-list>
-    <v-btn style="width:100%" flat @click="$root.$emit('generate', selectedAnimu)">generate poster</v-btn>
+    <v-btn class="ma-0 mt-4" style="width:100%" flat @click="$root.$emit('generate', selectedAnimu)">generate poster</v-btn>
   </div>
 </template>
 
