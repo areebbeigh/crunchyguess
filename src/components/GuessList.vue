@@ -65,7 +65,7 @@
           </v-flex>
       </v-layout>
     </v-list>
-    <v-btn style="width:100%" flat @click="$root.$emit('generate', selectedAnimu)">generate</v-btn>
+    <v-btn style="width:100%" flat @click="$root.$emit('generate', selectedAnimu)">generate poster</v-btn>
   </div>
 </template>
 
